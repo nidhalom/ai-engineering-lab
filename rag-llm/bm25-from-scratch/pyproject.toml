@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bm25-from-scratch"
+version = "0.1.0"
+description = "BM25 / BM25+ ranking library with an accent-folding tokenizer, inverted index and save/load."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Nidhal Kissoum" }]
+dependencies = []
+
+[project.optional-dependencies]
+demo = ["scikit-learn>=1.4"]
+test = ["pytest>=8", "scikit-learn>=1.4"]
+
+[tool.setuptools]
+packages = ["bm25_scratch"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
