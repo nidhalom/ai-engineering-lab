@@ -2,6 +2,8 @@
 
 # ai-engineering-lab
 
+[![CI](https://github.com/nidhalom/ai-engineering-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/nidhalom/ai-engineering-lab/actions/workflows/ci.yml)
+
 Small, tested Python projects on RAG and LLM tooling, each written from scratch and each reporting its results honestly.
 
 ## Projects
