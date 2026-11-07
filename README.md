@@ -4,11 +4,17 @@
 
 [![CI](https://github.com/nidhalom/ai-engineering-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/nidhalom/ai-engineering-lab/actions/workflows/ci.yml)
 
-Small, tested Python projects on RAG and LLM tooling, each written from scratch and each reporting its results honestly.
+Small, tested Python projects on EEG/brain-computer interfaces and RAG/LLM tooling, each written from scratch and each reporting its results honestly.
 
 ## Projects
 
 All numbers below are copied from each project's own README. Most evaluations are on small or synthetic data, and each README says so in detail.
+
+### EEG / BCI
+
+| Project | What it is | Key tech | Result stated in its README |
+|---|---|---|---|
+| [eeg-signal-toolkit](eeg-bci/eeg-signal-toolkit) | Band-pass/notch filters, sliding windows, Welch band power and a from-scratch two-class CSP | numpy, scipy, scikit-learn (demo) | On synthetic signals (not real EEG), 5-fold accuracy: band power + LDA 0.933 +/- 0.062, CSP + LDA 1.000 +/- 0.000 |
 
 ### RAG / LLM
 
