@@ -15,6 +15,7 @@ All numbers below are copied from each project's own README. Most evaluations ar
 | Project | What it is | Key tech | Result stated in its README |
 |---|---|---|---|
 | [eeg-signal-toolkit](eeg-bci/eeg-signal-toolkit) | Band-pass/notch filters, sliding windows, Welch band power and a from-scratch two-class CSP | numpy, scipy, scikit-learn (demo) | On synthetic signals (not real EEG), 5-fold accuracy: band power + LDA 0.933 +/- 0.062, CSP + LDA 1.000 +/- 0.000 |
+| [eegnet-pytorch](eeg-bci/eegnet-pytorch) | Readable PyTorch EEGNet (Lawhern et al., 2018) with max-norm constraints and group-wise splits | PyTorch | Leakage demo on labels with no signal (chance 0.50): random window split 1.000 (leaky) vs split by trial 0.667 (honest, 6 test trials, noisy) |
 
 ### RAG / LLM
 
@@ -32,6 +33,8 @@ python -m venv .venv && source .venv/bin/activate    # Windows: .venv\Scripts\ac
 pip install -e ".[test]"              # or: pip install -r requirements.txt pytest
 python -m pytest -q
 ```
+
+`eeg-bci/eegnet-pytorch` needs PyTorch first (`pip install torch --index-url https://download.pytorch.org/whl/cpu`) and its tests take about a minute.
 
 ## Why a lab
 
